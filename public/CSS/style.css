@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 97vh;
+    padding-bottom: 49px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 16px;
+    background-color: #303030;
+    width: 340px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.25);
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.acess{
+    margin-top: 36px;
+}
+.acessAlt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.arrow{
+    position: relative;
+    top: -134px;
+    left: -128px;
+    cursor: pointer;
+}
+
+.recovery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+.pricesTable{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 72px;
+    display: flex;
+    gap: 34px;
+    flex-direction: column;
+}
+
+#textAlt{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.imgAlt{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+#imgAnim:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+    animation: ease-out;
+}
+
+#select{
+    width: 59px;
+    height: 18px;
+    background-color: #00875F;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#select:hover{
+    animation: ease-out;
+    background-color: #009b6c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 500ms;
+}
+#limite{
+    width: 106px;
+   
+}
+
+.opcao{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 57px;
+}
+
+input[type=email], input[type=password], input[type=text]{
+background-color: #121214;
+color: #7C7C8A;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+padding-left: 10px;
+width: 251px;
+height: 38px;
+border: none;
+border-radius: 6px;
+}
+
+span{
+    color: #FFFFFF;
+}
+
+span a{
+    color: #FFFFFF;
+}
+
+button{
+    width: 261px;
+    height: 43px;
+    background-color: #00875F;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover{
+    animation: ease-out;
+    background-color: #009b6c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 500ms;
+}
