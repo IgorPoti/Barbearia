@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\registerUser;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,8 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
-Route::get('/cadastro', function () {
-    return view('auth.cadastro');
-});
+Route::get('/cadastro', [registerUser::class, 'index']);
+Route::post('/registrando', [registerUser::class, 'store']);
 Route::get('/servicos', function () {
     return view('servicos');
 });

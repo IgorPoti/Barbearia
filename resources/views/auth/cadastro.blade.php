@@ -13,13 +13,12 @@
             </span>
             <div class="acess">
                 <div class="inputAcess">
-                    <form id="forma">
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+                    <form method="POST" action="/registrando" id="forma">
+                        @csrf
+                        <input type="text" id="nome" name="name" placeholder="Seu nome" required />
                         <input type="email" id="email" name="email" placeholder="E-mail" required />
-                        <input type="email" id="cEmail" name="email" placeholder="Confirme o seu e-mail" required />
-                        <input type="password" id="password" name="email" placeholder="Sua senha" required />
-                        <input type="password" id="cPassword" name="email" placeholder="Confirme a sua senha" required />
-                        <button style="margin-top: 20px;">Confirmar</button>
+                        <input type="password" id="password" name="password" placeholder="Sua senha" required />
+                        <input type="submit" value="Criar a conta" style="margin-top: 20px;"/>
                     </form>
                 </div>
             </div>
