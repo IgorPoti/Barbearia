@@ -5,7 +5,7 @@
         <div class="box" style="padding-bottom: 75px;">
             <img src="imagens/Logo.svg" alt="logo barbearia" />
             <div class="arrow">
-                <a href="index.html"><img src="imagens/Arrow 2.svg" alt="voltar"></a>
+                <a onclick="window.history.back()"><img src="imagens/Arrow 2.svg" alt="voltar"></a>
             </div>
             <span style="margin-top: 8px;"><b>Recupere a sua senha</b></span>
             <span style="margin-top: 8px; font-size: 14px;"><b>Digite o seu e-mail para <br>

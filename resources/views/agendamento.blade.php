@@ -5,7 +5,7 @@
         <div class="box" style="padding-bottom: 20px; margin-top: 49px; width: 410px;">
             <img src="imagens/Logo.svg" alt="logo barbearia" />
             <div class="arrow">
-                <a href="index.html"><img src="imagens/Arrow 2.svg" alt="voltar"></a>
+                <a onclick="window.history.back()"><img src="imagens/Arrow 2.svg" alt="voltar"></a>
             </div>
             <span style="margin-top: 8px;"><b>Selecione os dias disponíveis</b></span>
 

@@ -15,6 +15,7 @@
 @yield('content')
     <script src="{{ asset ('JS/alert.js')}}"></script>
     <script src="sweetalert2.min.js"></script>
+    
 </body>
 
 </html>
