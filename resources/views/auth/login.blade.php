@@ -7,10 +7,11 @@
         <span style="margin-top: 8px;"><b>Acesse sua conta</b></span>
         <div class="acess">
             <div class="inputAcess">
-                <form>
+                <form method="POST" action="/auth">
+                    @csrf
                     <input type="email" id="email" name="email" placeholder="E-mail" required />
-                    <input type="password" id="pass" name="pass" placeholder="Senha" required />
-                    <input type="submit" value="entrar" onclick="sucesso()"></input>
+                    <input type="password" id="pass" name="password" placeholder="Senha" required />
+                    <input type="submit" value="entrar"/>
                 </form>
             </div>
             <div class="acessAlt">
@@ -22,8 +23,8 @@
             </div>
 
             <div class="recovery">
-                <span id="textAlt">Esqueceu sua senha? <a href="RecSenha.html"><b>Recuperar a senha</b></a></span>
-                <span id="textAlt"><a href="Cadastro.html"><b>Criar uma nova conta</b></a></span>
+                <span id="textAlt">Esqueceu sua senha? <a href="/reset"><b>Recuperar a senha</b></a></span>
+                <span id="textAlt"><a href="/cadastro"><b>Criar uma nova conta</b></a></span>
             </div>
         </div>
     </div>

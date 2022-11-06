@@ -4,9 +4,8 @@
     <div class="container">
         <div class="box" style="padding-bottom: 20px; margin-top: 49px; width: 410px;">
             <img src="imagens/Logo.svg" alt="logo barbearia" />
-            <div class="arrow">
-                <a href="index.html"><img src="imagens/Arrow 2.svg" alt="voltar"></a>
-            </div>
+            <a href="/logout">Logout</a>
+            <a>Olá, {{Auth::user()->name}}</a>
             <span style="margin-top: 8px;"><b>Selecione o serviço</b></span>
             <div class="pricesTable">
                 <div class="opcao">
@@ -28,6 +27,7 @@
 
             </div>
             <a href="AgendamentoServicoData.html"><button style="margin-top: 40px;">Cancelar Agendamento</button></a>
+            
         </div>
     </div>
     </div>
