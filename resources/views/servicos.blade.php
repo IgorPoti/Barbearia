@@ -3,30 +3,22 @@
 @section('content')
     <div class="container">
         <div class="box" style="padding-bottom: 20px; margin-top: 49px; width: 410px;">
+            <a href="/logout"><button id="exit">Sair</button></a>
             <img src="imagens/Logo.svg" alt="logo barbearia" />
-            <a href="/logout">Logout</a>
-            <a>Olá, {{Auth::user()->name}}</a>
-            <span style="margin-top: 8px;"><b>Selecione o serviço</b></span>
+            <span style="font-size: 19px"><a>Olá, <b>{{Auth::user()->name}}</b></a></span>
+            <span style="margin-top: 8px;">Selecione o serviço</span>
             <div class="pricesTable">
+                @foreach ($Services as $service)
                 <div class="opcao">
-                    <button id="select">Selecionar</button>
-                    <span id="limite">Cabelo</span>
-                    <span>15 R$</span>
-                </div>
-                <div class="opcao">
-                    <button id="select">Selecionar</button>
-                    <span id="limite">Cabelo e Barba</span>
-                    <span>30 R$</span>
-                </div>
-                <div class="opcao">
-                    <button id="select">Selecionar</button>
-                    <span id="limite">Cabelo</span>
-                    <span>15 R$</span>
-
-                </div>
+                    <a href="/agendamento"> <button id="select">Selecionar</button></a>
+                     <span id="limite">{{$service->tiposervico}}</span>
+                     <span>R$ {{$service->valor}} </span>
+                 </div>  
+                @endforeach
+                
 
             </div>
-            <a href="AgendamentoServicoData.html"><button style="margin-top: 40px;">Cancelar Agendamento</button></a>
+            <a><button style="margin-top: 40px;" id="cancelar">Cancelar Agendamento</button></a>
             
         </div>
     </div>

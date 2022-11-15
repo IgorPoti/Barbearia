@@ -11,7 +11,7 @@
                     @csrf
                     <input type="email" id="email" name="email" placeholder="E-mail" required />
                     <input type="password" id="pass" name="password" placeholder="Senha" required />
-                    <input type="submit" value="entrar"/>
+                    <input type="submit" value="Entrar"/>
                 </form>
             </div>
             <div class="acessAlt">

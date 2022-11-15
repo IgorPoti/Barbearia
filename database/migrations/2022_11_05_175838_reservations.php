@@ -18,6 +18,7 @@ class Reservations extends Migration
             $table->string('cliente');
             $table->date('diaAgendado');
             $table->time('horaAgendada', $precision = 0);
+            $table->string('servico');
             $table->timestamps();
         });
     }
