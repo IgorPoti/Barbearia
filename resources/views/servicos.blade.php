@@ -3,7 +3,12 @@
 @section('content')
     <div class="container">
         <div class="box" style="padding-bottom: 20px; margin-top: 49px; width: 410px;">
-            <a href="/logout"><button id="exit">Sair</button></a>
+            <div class="gerenciamento">
+            @if(Auth::user()->typeuser == "barbeiro")
+                <a href="/dashboard"><button id="exit" style="width: 67px; height: 26px;  background-color: #0054ff;">Gerenciar</button></a>
+                @endif
+                <a href="/logout"><button id="exit">Sair</button></a>
+            </div>
             <img src="imagens/Logo.svg" alt="logo barbearia" />
             <span style="font-size: 19px"><a>Olá, <b>{{Auth::user()->name}}</b></a></span>
             <span style="margin-top: 8px;">Selecione o serviço</span>
