@@ -23,6 +23,7 @@ class loginUser extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect("servicos");
         } else {
+            
             return redirect("login");
         }
     }

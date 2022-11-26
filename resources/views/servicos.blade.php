@@ -6,8 +6,11 @@
             <div class="gerenciamento">
             @if(Auth::user()->typeuser == "barbeiro")
                 <a href="/dashboard"><button id="exit" style="width: 67px; height: 26px;  background-color: #0054ff;">Gerenciar</button></a>
-                @endif
                 <a href="/logout"><button id="exit">Sair</button></a>
+                @endif
+                @if(Auth::user()->typeuser == "cliente")
+                <a href="/logout"><button id="exit" style="left: 140px">Sair</button></a>
+                @endif
             </div>
             <img src="imagens/Logo.svg" alt="logo barbearia" />
             <span style="font-size: 19px"><a>Olá, <b>{{Auth::user()->name}}</b></a></span>

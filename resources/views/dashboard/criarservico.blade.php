@@ -3,9 +3,12 @@
 @section("content")
 
 <div class="container">
-    <div class="box" style="padding-bottom: 30px;">
+    <div class="box" style="padding-bottom: 18px;">
         <img src="imagens/Logo.svg" alt="logo barbearia" />
-        <span style="margin-top: 8px;"><b>Dashboard</b></span>
+        <span><b>Criar novo serviço</b></span>
+        <div class="arrow" style="top: -155px">
+            <a onclick="window.history.back()"><img src="imagens/Arrow 2.svg" alt="voltar"></a>
+        </div>
         <div class="acess">
             <div class="inputAcess">
                 <form method="POST" action="/registrando/servico">
