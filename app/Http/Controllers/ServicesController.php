@@ -14,7 +14,7 @@ class ServicesController extends Controller
         ]);
     }
 
-    public function indexAdmin (Request $request){
+    public function indexAdmin (){
         return view('dashboard.gerenciarservicos', [
             'Services' => $this->getServices()
         ]);

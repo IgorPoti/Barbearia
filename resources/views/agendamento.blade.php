@@ -23,7 +23,7 @@
                 <option value="5">11:30</option>
                 <option value="6">12:00</option>
             </select>
-            <input type="submit" value="Agendar" style="margin-top: 20px"/>
+            <input type="submit" value="Agendar" style="margin-top: 20px" onclick="sucesso()"/>
         </div>
     </div>
 @endsection

@@ -26,7 +26,7 @@
                 
 
             </div>
-            <a><button style="margin-top: 40px;" id="cancelar">Cancelar Agendamento</button></a>
+            <a><button style="margin-top: 40px;" id="cancelar" onclick="cancelamento()">Cancelar Agendamento</button></a>
             
         </div>
     </div>

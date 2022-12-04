@@ -24,7 +24,7 @@ class loginUser extends Controller
             return redirect("servicos");
         } else {
             
-            return redirect("login");
+            return redirect("login")->with('error','Usuário ou senha inválidos!');;
         }
     }
 

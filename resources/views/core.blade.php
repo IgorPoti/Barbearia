@@ -11,7 +11,8 @@
 
 <body>
 @yield('content')
-    
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="JS/alert.js"></script>
 </body>
 
 </html>

@@ -198,3 +198,15 @@ a{
     text-decoration: none;
 }
 
+.error{
+    width: 263px;
+    height: 26px;
+    background-color: rgb(226, 93, 93);
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    text-align: center;
+    color: #3f1f1f;
+}

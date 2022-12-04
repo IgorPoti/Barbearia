@@ -6,6 +6,7 @@
         <img src="imagens/Logo.svg" alt="logo barbearia" />
         <span style="margin-top: 8px;"><b>Acesse sua conta</b></span>
         <div class="acess">
+            @include('flash-message')
             <div class="inputAcess">
                 <form method="POST" action="/auth">
                     @csrf
