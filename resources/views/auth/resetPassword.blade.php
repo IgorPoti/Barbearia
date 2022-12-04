@@ -11,12 +11,12 @@
             <span style="margin-top: 8px; font-size: 14px;"><b>Digite o seu e-mail para <br>
                     <center>recuperação</center>
                 </b></span>
-            <div class="acess">
                 <div class="inputAcess">
-                    <input type="email" id="email" name="email" placeholder="E-mail" style="margin-top: 17px;" />
+                    <form style="margin-top: 6%">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required />
+                        <input type="submit" value="Enviar"/>
+                    </form>
                 </div>
-                <a href=""><button style="margin-top: 48px;">Confirmar</button></a>
-            </div>
 
         </div>
     </div>

@@ -152,6 +152,18 @@ border: none;
 border-radius: 6px;
 }
 
+select{
+    background-color: #121214;
+color: #7C7C8A;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+padding-left: 10px;
+width: 251px;
+height: 38px;
+border: none;
+border-radius: 6px;
+}
+
 span{
     color: #FFFFFF;
 }
